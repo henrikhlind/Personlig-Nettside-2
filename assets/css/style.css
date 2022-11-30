@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;600;900&display=swap');
+
+:root {
+    --background-color: #ffffff;
+    --secondary-color: #39393A;
+    --secondary-hover-color: #4d4d4e;
+}
+
+body {
+    background-color: var(--background-color) !important;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, a:not(.mapLink), p, span {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--secondary-color) !important;
+}
+
+a:not(.mapLink) {
+    text-decoration: none !important;
+    color: var(--secondary-color) !important;
+    cursor: pointer;
+}
+
+a:hover:not(.mapLink) {
+    transition: 0.2s;
+    color: var(--secondary-hover-color) !important;
+}
+
+td,th {
+    text-transform: uppercase;
+    color: var(--secondary-color) !important;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: 2fr 1fr; */
+}
+
+main > .main-section {
+    height: 100%;
+}
+
+main > .main-description-section,
+main > .main-nav-section {
+    border-left: 1px solid var(--secondary-color) !important;
+}
+
+main > .main-headline-section > h1 {
+    font-weight: 600;
+    font-size: 6rem;
+    margin: 2rem;
+    text-align: right;
+}
+
+main > .main-description-section > h2 {
+    font-size: 3rem;
+}
+
+main > .main-description-section > h2 > a {
+    font-weight: 600;
+}
+
+main > .main-description-section {
+    font-size: 2rem;
+}
+
+main > .main-headline-section > #experience-headline,
+main > .main-headline-section > #contact-headline {
+    font-size: 4.75rem !important;
+}
+
+main>.main-description-section > #about-description {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+main > .main-description-section > #experience-description {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+main > .main-description-section > #frontpage-description {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+main > .main-description-section > .contact-form > form > .contact-button {
+    border: 1px solid var(--secondary-color) !important;
+    border-radius: 0;
+}
+
+main > .main-description-section > #about-table {
+    font-size: 1rem;
+    margin-left: 0.5rem !important;
+}
+
+main > .main-description-section > .contact-form {
+    margin: 1rem;
+    width: 50%;
+}
+
+footer {
+    border-top: 1px solid var(--secondary-color) !important;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer > p {
+    margin: 0;
+    text-transform: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color) !important;
+}
+
+nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--secondary-color) !important;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > #nav-link-section > .active {
+    font-weight: 600;
+}
+
+nav > #nav-contact-section > .active {
+    font-weight: 600;
+}
+
+#nav-logo-section,
+#nav-link-section {
+    flex-basis: calc(100% / 3);
+}
+
+#nav-social-section,
+#nav-contact-section {
+    flex-grow: 1;
+}
+
+#nav-link-section {
+    gap: 6rem;
+}
+
+#nav-social-section {
+    gap: 3rem;
+}
+
+#nav-logo-section {
+    justify-content: flex-start;
+}
+
+#nav-logo-section > a > h3 {
+    font-weight: 800;
+}
